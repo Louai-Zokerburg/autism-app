@@ -30,6 +30,8 @@ class MyBtn extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(btnSize / 2),
           ),
+          elevation: 20.0 ,
+          shadowColor: Colors.grey,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -39,10 +41,10 @@ class MyBtn extends StatelessWidget {
               width: btnSize / 1.3,
               height: btnSize / 1.3,
             ),
-            const SizedBox(height: 8.0),
+            const SizedBox(height: 9.0),
             Text(
               buttonText,
-              style: const TextStyle(color: Colors.black, fontSize: 24),
+              style: const TextStyle(color: Colors.black, fontSize: 16 , fontWeight: FontWeight.bold),
             ),
           ],
         ),
@@ -50,3 +52,4 @@ class MyBtn extends StatelessWidget {
     );
   }
 }
+  
